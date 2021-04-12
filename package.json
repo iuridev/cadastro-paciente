@@ -1,0 +1,23 @@
+{
+  "name": "cadastro-paciente",
+  "version": "1.0.0",
+  "description": "A primeira API nunca esquecemos, não é verdade? Aqui é um projeto de uma API para Cadastro de Pacientes em um hospital (fictício).",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iuridev/cadastro-paciente.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iuridev/cadastro-paciente/issues"
+  },
+  "homepage": "https://github.com/iuridev/cadastro-paciente#readme",
+  "devDependencies": {
+    "serverless-offline": "^6.9.0"
+  }
+}
