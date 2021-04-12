@@ -10,11 +10,15 @@ provider:
 
 functions:
   listarPacientes:
-
     handler: handler.listarPacientes
-
     events:
       - http:
           path: paciente
           method: get
 
+  obterPaciente:
+    handler: handler.obterPaciente
+    events:
+      - http:
+          path: paciente/{pacienteId}
+          method: get
