@@ -1,12 +1,12 @@
-'use strict';
-
+'use strict'
 const pacientes = [
-  {id: 1, nome: "Maria", dataNasc: '1980-08-20'},
-  {id: 2, nome: "Joao", dataNasc: '1994-06-15'},
-  {id: 3, nome: "Jose", dataNasc: '1985-02-22'}
-];
+  { id: 1, nome: 'Maria', dataNascimento: '1984-11-01' },
+  { id: 2, nome: 'Joao', dataNascimento: '1980-01-16' },
+  { id: 3, nome: 'Jose', dataNascimento: '1998-06-06' }
+]
 
-module.exports.listarPacientes = async (event) => {
+module.exports.listarPacientes = async event => {
+  console.log(event)
   return {
     statusCode: 200,
     body: JSON.stringify(
@@ -15,9 +15,9 @@ module.exports.listarPacientes = async (event) => {
       },
       null,
       2
-    ),
-  };
+    )
+  }
 
   // Use this code if you don't use the http event with the LAMBDA-PROXY integration
   // return { message: 'Go Serverless v1.0! Your function executed successfully!', event };
-};
+}
