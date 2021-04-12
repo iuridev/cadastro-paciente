@@ -22,19 +22,15 @@ module.exports.listarPacientes = async event => {
   // return { message: 'Go Serverless v1.0! Your function executed successfully!', event };
 }
 
-//minute 4:26
+module.exports.obterPaciente = async (event) => {
+  console.log(event);
+  const {pacienteId} = event.pathParameters;
 
-module.exports.obterPaciente = async event => {
-  console.log(event)
+  const paciente = pacientes.find((paciente)=>paciente.id == pacienteId);
+
   return {
     statusCode: 200,
-    body: JSON.stringify(
-      {
-        pacientes
-      },
-      null,
-      2
-    )
+    body: JSON.stringify(paciente ,null,2)
   }
 
   // Use this code if you don't use the http event with the LAMBDA-PROXY integration
