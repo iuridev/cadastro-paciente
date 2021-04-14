@@ -25,3 +25,18 @@ functions:
       - http:
           path: paciente/{pacienteId}
           method: get
+
+#IMPLANTAÇÃO DYNAMODB AWS
+  resources:
+    Resources:
+      PacientesTable:
+        Type: AWS::DynamoDB::Table
+        Properties:
+          TableName: PACIENTES
+          AttributeDefinitions:
+            - AttributeName: paciente_id
+            KeyType: HASH
+          ProvisionedThroughput:
+            ReadCapacityUnits: 1
+            WriteCapacityUnits: 1
+          

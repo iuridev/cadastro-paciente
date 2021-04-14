@@ -19,5 +19,8 @@
   "homepage": "https://github.com/iuridev/cadastro-paciente#readme",
   "devDependencies": {
     "serverless-offline": "^6.9.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.886.0"
   }
 }
