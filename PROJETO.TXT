@@ -1,0 +1,12 @@
+- GET /pacientes            OK 14/04/2021
+
+- GET /pacientes/ID         OK 14/04/2021
+
+- POST /pacientes           OK 14/04/2021
+
+- PUT /pacientes/ID
+
+- DELETE /pacientes/ID
+
+
+FRONTEND -> API GATEWAY -> LAMBDAS
